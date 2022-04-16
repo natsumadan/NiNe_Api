@@ -11,7 +11,7 @@ var (
 
 //Database Connection File
 func Connection() {
-	data, err := gorm.Open("mysql", "root:{PASSWORD}/nineapi?charset=utf8&parseTime=True&loc=Local")
+	data, err := gorm.Open("mysql", "root:{PASSWORD}@/nineapi?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		panic(err)
 	}
